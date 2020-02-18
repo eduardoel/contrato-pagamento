@@ -3,12 +3,12 @@ package entities;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
+//Contrato
 public class Contract {
 
-	private Integer number;
-	private Date date;
-	private Double totalValue;
+	private Integer number;//Numero
+	private Date date;//Data
+	private Double totalValue; //Valor total
 	
 	private List<Installment> installments = new ArrayList<>();
 	

@@ -1,10 +1,10 @@
 
 package services;
-
+//Serviços do Paypal
 public class PaypalService implements OnlinePaymentService {
 
-	private static final double FEE_PERCENTAGE = 0.02;
-	private static final double MONTHLY_INTEREST = 0.01;
+	private static final double FEE_PERCENTAGE = 0.02; //Taxa
+	private static final double MONTHLY_INTEREST = 0.01; //Taxa
 
 	@Override
 	public double paymentFee(double amount) {

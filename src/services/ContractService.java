@@ -5,15 +5,15 @@ import java.util.Date;
 
 import entities.Contract;
 import entities.Installment;
-
+//Contrato de serviços
 public class ContractService {
-
+    //Serviço de pagamento online
     private OnlinePaymentService onlinePaymentService;
 
     public ContractService(OnlinePaymentService onlinePaymentService) {
         this.onlinePaymentService = onlinePaymentService;
     }
-
+    //Processo de contrato
     public void processContract(Contract contract, int months) {
         double basicQuota = contract.getTotalValue() / months;
         for (int i = 1; i <= months; i++) {
